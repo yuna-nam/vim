@@ -865,5 +865,11 @@ append_ga_line(garray_T *gap)
     ml_append(curwin->w_cursor.lnum++, gap->ga_data, 0, FALSE);
     gap->ga_len = 0;
 }
+void bar(int i)
+#indef ISSUE1
+{
+#endif
+	printf("%d\n", i);
+}
 #endif
 
